@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+    
     #Basic validations for user
     validates :email, presense: true, uniqueness: true
     validates :password, length: { 6, allow_nil: true}
