@@ -1,0 +1,4 @@
+  [1m[35m (1825.3ms)[0m  [1m[35mCREATE DATABASE "Eventswipe_1_5_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (717.3ms)[0m  [1m[35mCREATE DATABASE "Eventswipe_1_5_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
