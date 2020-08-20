@@ -17,4 +17,17 @@ class Api::SessionsController < ApplicationController
             render json: ['Invalid credentials'], status: 422
         end
     end
+
+    #Logging out
+    def destroy
+        if current_user
+            #Logs out a user and return an empty JSON object
+            logout
+            render json: {}
+        else
+            #Render error since there is no user to logout
+            render json: '404 Error'
+        end
+    end
+    
 end
