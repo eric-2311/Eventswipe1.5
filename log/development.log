@@ -43,3 +43,36 @@ Migrating to CreateUsers (20200820203923)
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-08-20 17:46:27 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/eric/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template static_pages/root, application/root with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/eric/Desktop/Eventswipe.1.5/app/views"
+:
+  app/controllers/static_pages_controller.rb:4:in `root'
+
+Started POST "/__better_errors/ed54b21a5ecdc6fa/variables" for ::1 at 2020-08-20 17:46:27 -0400
+Started GET "/" for ::1 at 2020-08-20 17:48:22 -0400
+Processing by StaticPagesController#root as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template static_pages/root, application/root with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/eric/Desktop/Eventswipe.1.5/app/views"
+:
+  app/controllers/static_pages_controller.rb:4:in `root'
+
+Started POST "/__better_errors/3d0071a9993a11a8/variables" for ::1 at 2020-08-20 17:48:22 -0400
+Started GET "/" for ::1 at 2020-08-20 17:51:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 1017ms (Views: 1016.8ms | ActiveRecord: 0.0ms)
+
+
