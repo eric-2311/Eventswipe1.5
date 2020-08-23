@@ -6,6 +6,7 @@ export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 export const SIGN_UP_USER = 'SIGN_UP_USER';
 export const RECEIVE_USERS = 'RECEIVE_USERS';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
+export const RECEIVE_EMAIL = 'RECEIVE_EMAIL';
 
 //Regular action creator returning an object with all users
 const receiveUsers = users => ({
