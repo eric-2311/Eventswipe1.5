@@ -10,7 +10,7 @@ import {
 const _nullUser = Object.freeze({ id: null });
 
 //Will have the default state be a logged out user
-const SessionReducer = (state = _nullUser, action) => {
+const sessionReducer = (state = _nullUser, action) => {
     //Ensuring the state isn't accidentally mutated
     Object.freeze(state);
 
@@ -34,4 +34,4 @@ const SessionReducer = (state = _nullUser, action) => {
     }
 }
 
-export default SessionReducer;
+export default sessionReducer;
