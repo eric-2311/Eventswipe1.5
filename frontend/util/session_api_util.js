@@ -31,3 +31,11 @@ export const getUsers = () => {
         url: '/api/users'
     })
 }
+
+//AJAX promise which gets a user's email
+export const getEmail = email => {
+    return $.ajax({
+        method: 'GET',
+        url: `/api/users/email?email=${email}`
+    })
+}
