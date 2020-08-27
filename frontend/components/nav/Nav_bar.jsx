@@ -10,7 +10,13 @@ class NavBar extends React.Component {
         if (this.props.currentUser) {
             return (
                 <div>
-                    
+                    This is the nav bar
+                </div>
+            )
+        } else {
+            return (
+                <div>
+                    This is the nav bar
                 </div>
             )
         }
