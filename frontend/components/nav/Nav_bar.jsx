@@ -10,15 +10,15 @@ class NavBar extends React.Component {
         //If a current user is logged in, render the navigation dropdown
         if (this.props.currentUser) {
             return (
-                <div>
-                    This is the nav bar
+                <div className="nav-bar-container">
+                    <h1 className="nav-bar-logo">eventswipe</h1>
                 </div>
             )
         //If a user is not logged in, render the button linking to the login/signup page
         } else {
             return (
-                <div>
-                    This is the nav bar
+                <div className="nav-bar-container">
+                    <h1 className="nav-bar-logo">eventswipe</h1>
                 </div>
             )
         }
