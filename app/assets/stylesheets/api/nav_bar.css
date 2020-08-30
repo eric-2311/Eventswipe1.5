@@ -1,8 +1,24 @@
 .nav-bar-logo {
     color: red;
-    font-size: 28px;
+    font-size: 22px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 
 .nav-bar-container {
+    background-color: lightpink;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-sign-in {
+    padding: 25px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar-sign-in:hover {
     background-color: lightgray;
 }

@@ -281,7 +281,9 @@ var NavBar = /*#__PURE__*/function (_React$Component) {
           className: "nav-bar-container"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
           className: "nav-bar-logo"
-        }, "eventswipe"));
+        }, "eventswipe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "nav-bar-sign-in"
+        }, "Sign In"));
       }
     }
   }]);

@@ -19,6 +19,7 @@ class NavBar extends React.Component {
             return (
                 <div className="nav-bar-container">
                     <h1 className="nav-bar-logo">eventswipe</h1>
+                    <h1 className="nav-bar-sign-in">Sign In</h1>
                 </div>
             )
         }
