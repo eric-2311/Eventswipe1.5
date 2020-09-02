@@ -7,7 +7,7 @@
 }
 
 .nav-bar-container {
-    background-color: lightpink;
+    border: 1px dotted lightgray;
     display: flex;
     justify-content: space-between;
 }
