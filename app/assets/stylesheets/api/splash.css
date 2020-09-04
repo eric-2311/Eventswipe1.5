@@ -5,11 +5,19 @@
     border: 1px dotted blue;
 }
 
-.splash-welcome-msg {
+.splash-welcome-banner {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
+    font-weight: bold;
     border: 1px dotted red;
     align-self: center;
+    padding: 20px;
+    background-color: yellow;
+}
+
+.splash-welcome-msg {
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .splash-img {
