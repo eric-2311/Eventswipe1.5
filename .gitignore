@@ -19,7 +19,7 @@
 
 /node_modules
 /yarn-error.log
-
+/keys_dev.js
 /public/assets
 .byebug_history
 
