@@ -1,9 +1,9 @@
 class User < ApplicationRecord
     
     #Basic validations for user
-    validates :email, presense: true, uniqueness: true
+    validates :email, presence: true, uniqueness: true
     validates :password, length: { minimum: 6, allow_nil: true}
-    validates :session_token, presense: true, uniquness: true
+    validates :session_token, presensc: true, uniquness: true
 
     #Ensure that a user is logged in if a new user instance is created
     after_initialize :ensure_session_token
