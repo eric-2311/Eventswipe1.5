@@ -5,8 +5,12 @@ import Splash from './splash/Splash';
 
 const App = () => (
     <div>
-        <NavBarContainer />
-        <Splash />
+        <header>
+            <NavBarContainer />
+        </header>
+        <main>
+            <Splash />
+        </main>
     </div>
 )
 
