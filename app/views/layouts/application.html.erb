@@ -9,6 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <script type="text/javascript">
+      window.googleAPIKey = "<%= Rails.application.credentials.google_api_key %>"
       window.splashURL = "<%= image_url('splash_party.jpg') %>"
     </script>
   </head>
