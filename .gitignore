@@ -28,5 +28,7 @@ keys_dev.js
 .env.development.local
 .env.test.local
 .env.production.local
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+master.key
