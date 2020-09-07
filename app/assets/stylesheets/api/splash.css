@@ -1,7 +1,7 @@
 .splash-container {
     display: flex;
     padding-top: 20px;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     border: 1px dotted blue;
 }
 
@@ -13,6 +13,7 @@
     align-self: center;
     padding: 20px;
     background-color: yellow;
+    z-index: 1;
 }
 
 .splash-welcome-msg {
@@ -21,7 +22,7 @@
     color: black;
 }
 
-.splash-img {
-    height: 400px;
-    width: 700px;
+.splash-map-container {
+    padding-left: 200px;
+    z-index: 0;
 }

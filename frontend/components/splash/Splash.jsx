@@ -11,8 +11,8 @@ class Splash extends React.Component {
                         Join the fight for racial equality.
                     </div>
                 </div>
-                <div className="splash-img-container">
-                    <img src={window.splashURL} className="splash-img"/>
+                <div className="splash-map-container">
+                    <Map/>
                 </div>
             </div>
         )

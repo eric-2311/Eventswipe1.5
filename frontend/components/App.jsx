@@ -11,7 +11,6 @@ const App = () => (
         </header>
         <main>
             <Splash />
-            <Map/>
         </main>
     </div>
 )
