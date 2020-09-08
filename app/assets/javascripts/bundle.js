@@ -281,7 +281,7 @@ var mapContainer = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_1__["Map"], {
         style: {
-          width: 800,
+          width: 1000,
           height: 500,
           position: "relative"
         },
@@ -297,7 +297,8 @@ var mapContainer = /*#__PURE__*/function (_React$Component) {
   }]);
 
   return mapContainer;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component); //Using Google API Wrapper to wrap mapContainer component with valid API key
+
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(google_maps_react__WEBPACK_IMPORTED_MODULE_1__["GoogleApiWrapper"])({
   apiKey: _src_confg_keys__WEBPACK_IMPORTED_MODULE_2___default.a.REACT_APP_GOOGLE_KEY
