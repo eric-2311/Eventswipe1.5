@@ -298,15 +298,15 @@ var mapContainer = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_1__["Map"], {
         style: {
-          width: 1000,
+          width: 900,
           height: 500,
           position: "relative"
         },
         google: this.props.google,
-        zoom: 12,
+        zoom: 4,
         initialCenter: {
-          lat: 40.752055,
-          lng: -73.933856
+          lat: 39.7392,
+          lng: -101.9903
         },
         onClick: this.toggleMapClose
       });

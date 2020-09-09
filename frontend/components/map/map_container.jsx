@@ -11,10 +11,10 @@ class mapContainer extends React.Component {
     render() {
       return (
         <Map
-          style={{ width: 1000, height: 500, position: "relative" }}
+          style={{ width: 900, height: 500, position: "relative" }}
           google={this.props.google}
-          zoom={12}
-          initialCenter={{ lat: 40.752055, lng: -73.933856 }}
+          zoom={4}
+          initialCenter={{ lat: 39.7392, lng: -101.9903 }}
           onClick={this.toggleMapClose}
         ></Map>
       );
