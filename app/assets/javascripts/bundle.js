@@ -515,7 +515,7 @@ var Splash = /*#__PURE__*/function (_React$Component) {
         className: "splash-welcome-banner"
       }, "Welcome to Eventswipe", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-welcome-msg"
-      }, "Join the fight for racial equality.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Join the fight for racial equality."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "splash-map-container"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_map_map_container__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
     }

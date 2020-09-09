@@ -8,7 +8,7 @@ class Splash extends React.Component {
                 <div className="splash-welcome-banner">
                     Welcome to Eventswipe
                     <div className="splash-welcome-msg">
-                        Join the fight for racial equality.
+                        <p>Join the fight for racial equality.</p>
                     </div>
                 </div>
                 <div className="splash-map-container">
