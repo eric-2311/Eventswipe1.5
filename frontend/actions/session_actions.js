@@ -63,3 +63,15 @@ export const logout = () => dispatch => (
         .then(() => (dispatch(logoutUser())),
         err => dispatch(receiveErrors(err.responseJSON)))
 )
+
+//Regular action creaator returning an object with type RECEIVE_EMAIL
+const getEmail = () => ({
+    type: RECEIVE_EMAIL,
+    email
+})
+
+//Thunk action creator to receive email if email exists in database
+export const validateEmail = email => dispatch => (
+    SessionApiUtils.getEmail(email)
+        .then(email => dispatch(getEmail(email)))
+)

@@ -90,7 +90,7 @@
 /*!*********************************************!*\
   !*** ./frontend/actions/session_actions.js ***!
   \*********************************************/
-/*! exports provided: RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER, SIGN_UP_USER, RECEIVE_USERS, RECEIVE_SESSION_ERRORS, RECEIVE_EMAIL, fetchUsers, login, signup, logout */
+/*! exports provided: RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER, SIGN_UP_USER, RECEIVE_USERS, RECEIVE_SESSION_ERRORS, RECEIVE_EMAIL, fetchUsers, login, signup, logout, validateEmail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -105,6 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "signup", function() { return signup; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "validateEmail", function() { return validateEmail; });
 /* harmony import */ var _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../util/session_api_util */ "./frontend/util/session_api_util.js");
  //Exporting constants representing actions
 
@@ -188,6 +189,22 @@ var logout = function logout() {
       return dispatch(logoutUser());
     }, function (err) {
       return dispatch(receiveErrors(err.responseJSON));
+    });
+  };
+}; //Regular action creaator returning an object with type RECEIVE_EMAIL
+
+var getEmail = function getEmail() {
+  return {
+    type: RECEIVE_EMAIL,
+    email: email
+  };
+}; //Thunk action creator to receive email if email exists in database
+
+
+var validateEmail = function validateEmail(email) {
+  return function (dispatch) {
+    return _util_session_api_util__WEBPACK_IMPORTED_MODULE_0__["getEmail"](email).then(function (email) {
+      return dispatch(getEmail(email));
     });
   };
 };
