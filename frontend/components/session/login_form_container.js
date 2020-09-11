@@ -5,3 +5,7 @@ import LoginForm from './login_form';
 const mSTP = state => ({
     email: state.session.email
 })
+
+const mDTP = dispatch => ({
+    
+})
