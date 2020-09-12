@@ -7,6 +7,7 @@ export const SIGN_UP_USER = 'SIGN_UP_USER';
 export const RECEIVE_USERS = 'RECEIVE_USERS';
 export const RECEIVE_SESSION_ERRORS = 'RECEIVE_SESSION_ERRORS';
 export const RECEIVE_EMAIL = 'RECEIVE_EMAIL';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
 //Regular action creator returning an object with all users
 const receiveUsers = users => ({
@@ -75,3 +76,8 @@ export const validateEmail = email => dispatch => (
     SessionApiUtils.getEmail(email)
         .then(email => dispatch(getEmail(email)))
 )
+
+//Regular action creator returning an object with type CLEAR_ERRORS
+export const clearErrors = () => ({
+    type: CLEAR_ERRORS
+})
